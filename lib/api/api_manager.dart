@@ -1,11 +1,12 @@
 import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 import 'package:news_app/api/api_constatnts.dart';
 import 'package:news_app/model/NewsResponse.dart';
 import 'package:news_app/model/sourceResponse.dart';
 
 class ApiManager {
-  static Future<SourceResponse> getResponse(String categoryId) async {
+  static Future<SourceResponse?> getResponse(String categoryId) async {
     Uri url =
         Uri.https(ApiConstants.baseurl, ApiConstants.top_head_lines_source, {
       "apiKey": ApiConstants.apiKey,

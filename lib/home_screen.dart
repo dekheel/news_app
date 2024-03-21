@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:news_app/category/category_details.dart';
 import 'package:news_app/category/category_fragment.dart';
 import 'package:news_app/drawer/drawer.dart';
@@ -6,7 +7,7 @@ import 'package:news_app/model/NewsResponse.dart';
 import 'package:news_app/model/category.dart';
 import 'package:news_app/news/news_item_details.dart';
 import 'package:news_app/settings/setting_tab.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 import 'search_delegate.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -96,7 +97,6 @@ class _HomeScreenState extends State<HomeScreen> {
     selectedMenuItem = 0;
     selectedCategory = null;
     newsObject = newSelectedNews;
-    print(newSelectedNews.title);
     setState(() {});
   }
 }
